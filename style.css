@@ -115,3 +115,34 @@ section.topo-do-site .flex {
       top: 30px;
   }
 }
+
+section.especiliadades {
+  padding: 40px 4%;
+}
+
+section.especiliadades .flex {
+  gap: 60px;
+}
+
+.especiliadades .especialidades-box {
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 45px;
+  transition: .2s;
+}
+
+.especiliadades .especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #669999;
+}
+
+.especiliadades .especialidades-box i {
+  font-size: 70px;
+  color: #669999;
+}
+
+.especiliadades .especialidades-box h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
