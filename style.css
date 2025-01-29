@@ -64,8 +64,8 @@ header nav.menu-desktop ul li {
 
 button:hover,
 form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px #fff;
-    transform: scale(1.05);
+  box-shadow: 0px 0px 8px #fff;
+  transform: scale(1.05);
 }
 
 .social-media {
@@ -106,14 +106,12 @@ section.topo-do-site .flex {
   border-radius: 50%;
 }
 
-
 @keyframes flutuar {
   0% {
-      top: 0;
+    top: 0;
   }
-
   100% {
-      top: 30px;
+    top: 30px;
   }
 }
 
@@ -179,7 +177,6 @@ section.sobre .flex {
 
 section.portfolio {
   padding: 80px 4%;
-  /*box-shadow: 0 0 40px 10px #ffffff1d;*/
 }
 
 section.portfolio .flex {
@@ -199,7 +196,6 @@ section.portfolio .flex {
   border-radius: 40px;
   position: relative;
 }
-
 
 .img-port:hover {
   background-position: 100% 50%; /* Move para o final da imagem (direita) */
@@ -235,11 +231,106 @@ section.portfolio .flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; /* Garante alinhamento do texto */
-  
+  text-align: center;
 }
 
 .titulo span {
   color: #669999;
-  display: block; /* Garante que a palavra destacada fique em uma linha separada */
+  display: block;
+}
+
+.certificados {
+  text-align: center;
+  padding: 80px 4%;
+}
+
+.certificados h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 600px; /* Mantém o tamanho do swiper */
+  height: auto;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0; /* Impede que o swiper encolha para múltiplos itens na tela */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Suaviza as bordas */
+}
+
+/* Estilo para as setas de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #669999; /* Cor das setas */
+  font-size: 30px; /* Tamanho das setas */
+  width: 40px; /* Largura das setas */
+  height: 40px; /* Altura das setas */
+  transition: transform 0.3s ease; /* Efeito de transição */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #fff; /* Cor das setas quando passa o mouse */
+  transform: scale(1.2); /* Aumentar o tamanho das setas ao passar o mouse */
+}
+
+footer {
+  margin-top: 100px;
+  padding: 20px 10%;
+  color: white;
+}
+
+footer i {
+  color: #669999;
+}
+
+footer a {
+  color: white;
+}
+
+footer .line-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 600px;
+  border-bottom: 2px solid #669999;
+  padding: 5px;
+}
+
+.social-media2 i {
+  color: #669999;
+  font-size: 30px;
+  padding: 20px;
+  transition: .2s;
+}
+
+.social-media2 i:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+footer span {
+  color: #669999;
+  font-size: 20px;
+}
+
+.line-footer span {
+  color: white;
+}
+
+.line-footer2 h4 {
+  margin-top: 15px;
 }
