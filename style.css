@@ -116,7 +116,7 @@ section.topo-do-site .flex {
 }
 
 section.especiliadades {
-  padding: 40px 4%;
+  padding: 80px 4%;
 }
 
 section.especiliadades .flex {
@@ -267,6 +267,7 @@ section.portfolio .flex {
 .titulo span {
   color: #669999;
   display: block;
+  margin-left: 10px; 
 }
 
 .certificados {
