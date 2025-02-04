@@ -177,8 +177,8 @@ section.sobre .flex {
 
 .projeto {
   width: 100%;
-  max-width: 360px; /* Mantendo o tamanho original das imagens */
-  text-align: center; /* Centraliza o botão abaixo */
+  max-width: 360px; 
+  text-align: center;
 }
 
 .buttons {
@@ -188,7 +188,7 @@ section.sobre .flex {
 }
 
 .btn {
-  background-color: #669999; /* Cor do botão */
+  background-color: #669999; 
   color: #fff;
   padding: 10px 20px;
   border-radius: 25px;
@@ -215,20 +215,20 @@ section.portfolio .flex {
 }
 
 .img-port {
-  width: 100%; /* Para tornar responsivo */
+  width: 100%; 
   max-width: 360px;
   height: 460px;
-  margin: 0 auto; /* Centraliza no container */
+  margin: 0 auto; 
   background-size: cover;
-  background-position: 0 50%; /* Inicia no começo da imagem (esquerda) */
-  transition: background-position 8s ease; /* Animação suave ao passar o mouse */
+  background-position: 0 50%; 
+  transition: background-position 8s ease; 
   cursor: pointer;
   border-radius: 40px;
   position: relative;
 }
 
 .img-port:hover {
-  background-position: 100% 50%; /* Move para o final da imagem (direita) */
+  background-position: 100% 50%; 
 }
 
 .overlay {
@@ -276,7 +276,7 @@ section.portfolio .flex {
 }
 
 .certificados h2 {
-  font-size: 40px; /* Igual aos outros títulos */
+  font-size: 40px; 
   line-height: 40px;
   text-align: center;
   margin-bottom: 40px;
@@ -285,7 +285,7 @@ section.portfolio .flex {
 
 .swiper {
   width: 100%;
-  max-width: 600px; /* Mantém o tamanho do swiper */
+  max-width: 600px; 
   height: auto;
   margin: 0 auto;
 }
@@ -296,29 +296,28 @@ section.portfolio .flex {
   align-items: center;
   width: 100%;
   height: auto;
-  flex-shrink: 0; /* Impede que o swiper encolha para múltiplos itens na tela */
+  flex-shrink: 0; 
 }
 
 .swiper-slide img {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* Suaviza as bordas */
+  border-radius: 10px; 
 }
 
-/* Estilo para as setas de navegação */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #669999; /* Cor das setas */
-  font-size: 30px; /* Tamanho das setas */
-  width: 40px; /* Largura das setas */
-  height: 40px; /* Altura das setas */
-  transition: transform 0.3s ease; /* Efeito de transição */
+  color: #669999; 
+  font-size: 30px; 
+  width: 40px; 
+  height: 40px; 
+  transition: transform 0.3s ease; 
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: #fff; /* Cor das setas quando passa o mouse */
-  transform: scale(1.2); /* Aumentar o tamanho das setas ao passar o mouse */
+  color: #fff; 
+  transform: scale(1.2); 
 }
 
 footer {
@@ -366,4 +365,144 @@ footer span {
 
 .line-footer2 h4 {
   margin-top: 15px;
+}
+
+.certificados h2 span {
+  color: #669999;
+}
+
+@media screen and (max-width: 1024px) {
+  .interface {
+    padding: 0 5%;
+  }
+
+  header .interface {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-desktop ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-desktop ul li {
+    padding: 10px 0;
+  }
+
+  .topo-do-site .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-topo-site img {
+    width: 70%;
+  }
+
+  section.especiliadades .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projeto {
+    max-width: 100%;
+  }
+
+  .img-port {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .certificados {
+    padding: 40px 4%;
+  }
+
+  .swiper {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topo-do-site h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .topo-do-site .txt-topo-site p {
+    font-size: 16px;
+  }
+
+  .btn-contato button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .especialidades-box {
+    width: 90%;
+  }
+
+  .portfolio .projeto {
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+
+  .img-port {
+    height: 300px;
+  }
+
+  .overlay {
+    font-size: 18px;
+  }
+
+  .swiper-slide img {
+    width: 90%;
+  }
+
+  .social-media2 {
+    justify-content: center;
+  }
+
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .titulo span {
+    display: block;
+  }
+
+  .btn-ver-projeto {
+    margin-top: 15px; 
+  }
+
+  .email-section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .footer {
+    padding-top: 10px !important;
+    margin-top: -20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-media {
+    margin-top: 10px !important;
+  }
 }
