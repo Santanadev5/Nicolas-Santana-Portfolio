@@ -146,35 +146,6 @@ section.especiliadades .flex {
   margin: 15px 0;
 }
 
-section.sobre {
-  padding: 80px 4%;
-}
-
-section.sobre .flex {
-  align-items: center;
-  gap: 60px;
-}
-
-.sobre .txt-sobre {
-  color: #fff;
-}
-
-.sobre .txt-sobre h2 {
-  font-size: 40px;
-  line-height: 40px;
-  margin-bottom: 30px;
-}
-
-.sobre .txt-sobre h2 span {
-  color: #669999;
-  display: block;
-}
-
-.sobre .txt-sobre p {
-  margin: 20px 0;
-  text-align: justify;
-}
-
 .projeto {
   width: 100%;
   max-width: 360px; 
@@ -185,10 +156,24 @@ section.sobre .flex {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espaço entre os botões */
+}
+
+.btn-icon {
+  background-color: transparent;
+  color: #669999;
+  font-size: 35px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.btn-icon:hover {
+  color: #fff;
 }
 
 .btn {
-  background-color: #669999; 
+  background-color: #669999;
   color: #fff;
   padding: 10px 20px;
   border-radius: 25px;
@@ -197,8 +182,10 @@ section.sobre .flex {
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 8px;
   transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #557a7a;
 }
 
 .btn i {
@@ -332,6 +319,7 @@ footer i {
 
 footer a {
   color: white;
+  text-decoration: none;
 }
 
 footer .line-footer {
