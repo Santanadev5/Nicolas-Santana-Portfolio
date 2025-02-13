@@ -157,7 +157,7 @@ section.especiliadades .flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Espaço entre os botões */
+  gap: 10px; 
 }
 
 .btn-icon {

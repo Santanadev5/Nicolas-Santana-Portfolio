@@ -8,13 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // Controle das setas
   document.querySelector('.seta-esquerda').addEventListener('click', () => {
-    swiper.slidePrev(); // Navega para o slide anterior
+    swiper.slidePrev();
   });
 
   document.querySelector('.seta-direita').addEventListener('click', () => {
-    swiper.slideNext(); // Navega para o próximo slide
+    swiper.slideNext();
   });
 });
 
@@ -28,26 +27,26 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // Controle das setas
+  
   document.querySelector('.seta-esquerda').addEventListener('click', () => {
-    swiper.slidePrev(); // Navega para o slide anterior
+    swiper.slidePrev(); 
   });
 
   document.querySelector('.seta-direita').addEventListener('click', () => {
-    swiper.slideNext(); // Navega para o próximo slide
+    swiper.slideNext(); 
   });
 
-  // Função de rolagem suave personalizada
+  
   function smoothScroll(target, duration) {
     let startPosition = window.pageYOffset;
-    let targetPosition = document.getElementById(target).offsetTop - 50; // Ajuste para não cobrir o título
+    let targetPosition = document.getElementById(target).offsetTop - 50; 
     let distance = targetPosition - startPosition;
     let startTime = null;
 
     function animation(currentTime) {
       if (startTime === null) startTime = currentTime;
       let timeElapsed = currentTime - startTime;
-      let progress = Math.min(timeElapsed / duration, 1); // Limita a progressão de 0 a 1
+      let progress = Math.min(timeElapsed / duration, 1); 
 
       window.scrollTo(0, startPosition + distance * easeInOutCubic(progress));
 
@@ -63,12 +62,12 @@ document.addEventListener("DOMContentLoaded", function () {
     requestAnimationFrame(animation);
   }
 
-  // Aplica a rolagem suave aos links do menu
+  
   document.querySelectorAll("nav a").forEach(anchor => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
       const targetId = this.getAttribute("href").substring(1);
-      smoothScroll(targetId, 800); // Define a duração da animação (800ms)
+      smoothScroll(targetId, 800); 
     });
   });
 });
