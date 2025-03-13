@@ -494,3 +494,38 @@ footer span {
     margin-top: 10px !important;
   }
 }
+
+section.sobre {
+  padding: 80px 4%;
+}
+
+section.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+
+.sobre .txt-sobre {
+  color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+  color: #669999;
+  display: block;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.img-sobre img {
+  max-width: 35vw; /* Define a largura como 50% da largura da tela */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block;
+}
